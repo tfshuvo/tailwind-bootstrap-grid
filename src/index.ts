@@ -96,10 +96,8 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
         '.container, .container-fluid': {
           maxWidth: 'var(--container-max-width)',
           width: '100%',
-          marginRight: 'auto',
-          marginLeft: 'auto',
-          paddingRight: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
-          paddingLeft: `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
+          'margin-inline': 'auto',
+          'padding-inline': `var(--bs-gutter-x, calc(${grid_gutter_width} / 2))`,
         },
       });
     }
@@ -116,15 +114,13 @@ module.exports = plugin.withOptions((pluginOptions) => (options) => {
         display: 'flex',
         flexWrap: 'wrap',
         marginTop: 'calc(var(--bs-gutter-y) * -1)',
-        marginRight: 'calc(var(--bs-gutter-x) / -2)',
-        marginLeft: 'calc(var(--bs-gutter-x) / -2)',
+        'margin-inline': 'calc(var(--bs-gutter-x) / -2)',
         '> *': {
           boxSizing: 'border-box',
           flexShrink: '0',
           width: '100%',
           maxWidth: '100%',
-          paddingRight: 'calc(var(--bs-gutter-x) / 2)',
-          paddingLeft: 'calc(var(--bs-gutter-x) / 2)',
+          'padding-inline': 'calc(var(--bs-gutter-x) / 2)',
           marginTop: 'var(--bs-gutter-y)',
         },
       },
